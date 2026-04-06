@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/routing";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
@@ -55,13 +56,16 @@ export default function Navbar() {
           {/* Logo */}
           <button
             onClick={() => scrollTo("#home")}
-            className="flex items-center gap-0.5 shrink-0"
+            className="flex items-center shrink-0"
           >
-            <span className="text-[22px] font-bold text-white tracking-tight">
-              Mercuria
-            </span>
-            <span className="text-[22px] font-bold text-[#A46EDB]">tech</span>
-            <span className="w-[7px] h-[7px] rounded-full bg-[#A46EDB] ml-[2px] -mt-2" />
+            <Image
+              src="/logo.png"
+              alt="Mercuriatech"
+              width={180}
+              height={40}
+              className="h-[32px] w-auto object-contain"
+              priority
+            />
           </button>
 
           {/* Desktop Nav Links */}

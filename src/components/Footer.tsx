@@ -5,6 +5,7 @@ import { useRouter, usePathname } from "@/i18n/routing";
 import { motion } from "framer-motion";
 import { Send, ArrowRight, Globe, Mail } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -80,10 +81,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           {/* Logo + Tagline */}
           <div>
-            <div className="flex items-center gap-0.5 mb-4">
-              <span className="text-[20px] font-bold text-white">Mercuria</span>
-              <span className="text-[20px] font-bold text-[#A46EDB]">tech</span>
-              <span className="w-[6px] h-[6px] rounded-full bg-[#A46EDB] ml-[2px] -mt-2" />
+            <div className="mb-4">
+              <Image
+                src="/logo.png"
+                alt="Mercuriatech"
+                width={160}
+                height={36}
+                className="h-[28px] w-auto object-contain"
+              />
             </div>
             <p className="text-[13px] text-white/35 leading-relaxed mb-6 max-w-[280px]">
               {t("tagline")}
