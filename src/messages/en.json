@@ -1,0 +1,157 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "products": "Products",
+    "brands": "Brands",
+    "about": "About",
+    "contact": "Contact",
+    "quickEnquiry": "Quick Enquiry →",
+    "phone": "+971 567 509 686",
+    "requestQuote": "Request a Quote"
+  },
+  "Hero": {
+    "label": "DUBAI SILICON OASIS • IFZA FREE ZONE",
+    "headline1": "Empowering Business",
+    "headline2": "with Premium IT",
+    "headline3": "Hardware",
+    "subtext": "Supplying world-class laptops, servers, networking, and security hardware across UAE and East Africa.",
+    "exploreProducts": "Explore Products",
+    "contactUs": "Contact Us",
+    "trust1": "IFZA Certified",
+    "trust2": "15+ Brands",
+    "trust3": "UAE & Africa",
+    "tabLaptops": "Laptops",
+    "tabServers": "Servers",
+    "tabNetworking": "Networking"
+  },
+  "Brands": {
+    "title": "Brands We Carry"
+  },
+  "Solutions": {
+    "label": "WHAT WE SUPPLY",
+    "title": "Complete IT Hardware Solutions",
+    "card1": {
+      "title": "End User Computing",
+      "desc": "Laptops, desktops, workstations, tablets and thin clients for every business need.",
+      "brands": "HP • Dell • Lenovo • Apple • Samsung"
+    },
+    "card2": {
+      "title": "Networking Solutions",
+      "desc": "Routers, switches, firewalls, Wi-Fi access points and SD-WAN infrastructure.",
+      "brands": "Cisco • Aruba • Huawei • D-Link"
+    },
+    "card3": {
+      "title": "Servers & Storage",
+      "desc": "Rack/blade servers, SAN, NAS and hyperconverged infrastructure.",
+      "brands": "HPE • Dell EMC"
+    },
+    "card4": {
+      "title": "Peripherals & Accessories",
+      "desc": "Printers, scanners, keyboards, webcams and cables for your workspace.",
+      "brands": "Epson • Canon • Logitech"
+    },
+    "card5": {
+      "title": "Security Hardware",
+      "desc": "Firewalls, UTM, CCTV, access control and biometric devices.",
+      "brands": "Fortinet • Hikvision"
+    },
+    "card6": {
+      "title": "Specialty Solutions",
+      "desc": "POS systems and industrial/embedded hardware for niche operations.",
+      "brands": "Zebra • Honeywell"
+    },
+    "learnMore": "Learn more →"
+  },
+  "Statement": {
+    "label": "WHO WE ARE",
+    "headline": "Your single point of contact for all IT hardware needs.",
+    "stat1": "15+",
+    "stat1Label": "Brands",
+    "stat2": "6",
+    "stat2Label": "Categories",
+    "stat3": "UAE & Africa",
+    "stat3Label": "Coverage",
+    "stat4": "IFZA",
+    "stat4Label": "Certified"
+  },
+  "Industries": {
+    "label": "WHO WE SERVE",
+    "title": "Hardware solutions for every industry, every scale.",
+    "chip1": "Corporate Enterprises",
+    "chip2": "Healthcare",
+    "chip3": "Education",
+    "chip4": "Retail & POS",
+    "chip5": "Construction & Industrial",
+    "chip6": "Banking & Finance"
+  },
+  "WhyUs": {
+    "label": "WHY MERCURIATECH",
+    "title": "Trusted IT hardware partner for UAE and East Africa",
+    "subtitle": "Delivering quality, authenticity, and performance.",
+    "card1": {
+      "title": "IFZA Free Zone Registered",
+      "desc": "Officially registered at Dubai Silicon Oasis — trusted and compliant."
+    },
+    "card2": {
+      "title": "Authorized Multi-Brand Distributor",
+      "desc": "Direct partnerships with 15+ global technology brands."
+    },
+    "card3": {
+      "title": "UAE & East Africa Coverage",
+      "desc": "Serving businesses from Dubai to Kenya and Tanzania."
+    },
+    "card4": {
+      "title": "Pre & Post Sales Support",
+      "desc": "Dedicated team from consultation through after-sales."
+    }
+  },
+  "Contact": {
+    "label": "CONTACT US",
+    "title": "Partner with Us for Premium IT Hardware",
+    "body": "We're ready to help you source the right technology for your business.",
+    "phone": "+971 567 509 686",
+    "email": "vdcruz@mercuriatech.com",
+    "location": "DSO – IFZA 23530, Dubai Silicon Oasis",
+    "benefit1": "Genuine authorized products",
+    "benefit2": "Competitive pricing",
+    "benefit3": "Fast UAE-wide delivery",
+    "benefit4": "Dedicated account manager",
+    "benefit5": "Pre & post sales support",
+    "benefit6": "East Africa coverage",
+    "formTitle": "Send an Enquiry",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "companyName": "Company Name",
+    "companyEmail": "Company Email",
+    "phoneField": "Phone",
+    "productInterest": "Product Interest",
+    "message": "Message",
+    "submit": "Send Enquiry",
+    "options": {
+      "endUser": "End User Computing",
+      "networking": "Networking",
+      "servers": "Servers & Storage",
+      "peripherals": "Peripherals",
+      "security": "Security Hardware",
+      "specialty": "Specialty"
+    }
+  },
+  "Footer": {
+    "newsletter": "Stay updated with our latest solutions",
+    "emailPlaceholder": "Enter your email",
+    "send": "Send",
+    "tagline": "Empowering Business Through Technology",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "products": "Products",
+    "brands": "Brands",
+    "about": "About",
+    "contact": "Contact",
+    "contactInfo": "Contact Info",
+    "address": "Dubai Silicon Oasis, IFZA 23530, Dubai, UAE",
+    "phone": "+971 567 509 686",
+    "email": "vdcruz@mercuriatech.com",
+    "copyright": "© 2025 Mercuriatech FZ CO. All Rights Reserved.",
+    "registered": "Registered at IFZA, Dubai Silicon Oasis, UAE."
+  }
+}

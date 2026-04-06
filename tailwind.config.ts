@@ -9,8 +9,42 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#0A0A0F",
+        foreground: "#FFFFFF",
+        primary: "#00C2FF",
+        accent: "#7B2FFF",
+        muted: "#A0AEC0",
+        card: "rgba(255,255,255,0.05)",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+      fontSize: {
+        hero: ["72px", { lineHeight: "1.1", fontWeight: "700" }],
+        section: ["48px", { lineHeight: "1.2", fontWeight: "600" }],
+      },
+      backdropBlur: {
+        glass: "20px",
+      },
+      animation: {
+        "marquee": "marquee 30s linear infinite",
+        "marquee-pause": "marquee 30s linear infinite paused",
+        "pulse-glow": "pulseGlow 4s ease-in-out infinite",
+        "float": "float 6s ease-in-out infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        pulseGlow: {
+          "0%, 100%": { opacity: "0.4", transform: "scale(1)" },
+          "50%": { opacity: "0.8", transform: "scale(1.1)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
       },
     },
   },

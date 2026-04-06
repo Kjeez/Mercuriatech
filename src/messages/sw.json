@@ -1,0 +1,157 @@
+{
+  "Navbar": {
+    "home": "Nyumbani",
+    "products": "Bidhaa",
+    "brands": "Chapa",
+    "about": "Kuhusu",
+    "contact": "Wasiliana",
+    "quickEnquiry": "Uliza Haraka →",
+    "phone": "+971 567 509 686",
+    "requestQuote": "Omba Nukuu"
+  },
+  "Hero": {
+    "label": "DUBAI SILICON OASIS • IFZA FREE ZONE",
+    "headline1": "Kuwezesha Biashara",
+    "headline2": "na Vifaa vya IT",
+    "headline3": "vya Hali ya Juu",
+    "subtext": "Kusambaza laptops, seva, mtandao, na vifaa vya usalama duniani kote katika UAE na Afrika Mashariki.",
+    "exploreProducts": "Gundua Bidhaa",
+    "contactUs": "Wasiliana Nasi",
+    "trust1": "IFZA Iliyoidhinishwa",
+    "trust2": "Chapa 15+",
+    "trust3": "UAE na Afrika",
+    "tabLaptops": "Laptops",
+    "tabServers": "Seva",
+    "tabNetworking": "Mtandao"
+  },
+  "Brands": {
+    "title": "Chapa Tunazobeba"
+  },
+  "Solutions": {
+    "label": "TUNACHOSAMBAZA",
+    "title": "Suluhisho Kamili za Vifaa vya IT",
+    "card1": {
+      "title": "Kompyuta za Mtumiaji",
+      "desc": "Laptops, desktops, workstations, tablets na thin clients kwa kila hitaji la biashara.",
+      "brands": "HP • Dell • Lenovo • Apple • Samsung"
+    },
+    "card2": {
+      "title": "Suluhisho za Mtandao",
+      "desc": "Routers, switches, firewalls, Wi-Fi access points na miundombinu ya SD-WAN.",
+      "brands": "Cisco • Aruba • Huawei • D-Link"
+    },
+    "card3": {
+      "title": "Seva na Hifadhi",
+      "desc": "Rack/blade servers, SAN, NAS na miundombinu ya hyperconverged.",
+      "brands": "HPE • Dell EMC"
+    },
+    "card4": {
+      "title": "Vifaa na Nyongeza",
+      "desc": "Printers, scanners, keyboards, webcams na cables kwa ofisi yako.",
+      "brands": "Epson • Canon • Logitech"
+    },
+    "card5": {
+      "title": "Vifaa vya Usalama",
+      "desc": "Firewalls, UTM, CCTV, udhibiti wa ufikiaji na vifaa vya biometriki.",
+      "brands": "Fortinet • Hikvision"
+    },
+    "card6": {
+      "title": "Suluhisho Maalum",
+      "desc": "Mifumo ya POS na vifaa vya viwandani/embedded kwa shughuli maalum.",
+      "brands": "Zebra • Honeywell"
+    },
+    "learnMore": "Soma zaidi →"
+  },
+  "Statement": {
+    "label": "SISI NI NANI",
+    "headline": "Kituo chako kimoja cha vifaa vyote vya IT.",
+    "stat1": "15+",
+    "stat1Label": "Chapa",
+    "stat2": "6",
+    "stat2Label": "Makundi",
+    "stat3": "UAE na Afrika",
+    "stat3Label": "Eneo",
+    "stat4": "IFZA",
+    "stat4Label": "Iliyoidhinishwa"
+  },
+  "Industries": {
+    "label": "TUNAOWAHUDUMIA",
+    "title": "Suluhisho za vifaa kwa kila sekta, kila kiwango.",
+    "chip1": "Makampuni ya Biashara",
+    "chip2": "Afya",
+    "chip3": "Elimu",
+    "chip4": "Biashara na POS",
+    "chip5": "Ujenzi na Viwanda",
+    "chip6": "Benki na Fedha"
+  },
+  "WhyUs": {
+    "label": "KWA NINI MERCURIATECH",
+    "title": "Mshirika wa kuaminika wa vifaa vya IT kwa UAE na Afrika Mashariki",
+    "subtitle": "Kutoa ubora, uhalisi, na utendaji.",
+    "card1": {
+      "title": "Imesajiliwa IFZA Free Zone",
+      "desc": "Imesajiliwa rasmi katika Dubai Silicon Oasis — kuaminika na kufuata sheria."
+    },
+    "card2": {
+      "title": "Msambazaji wa Chapa Nyingi",
+      "desc": "Ushirikiano wa moja kwa moja na chapa 15+ za teknolojia duniani."
+    },
+    "card3": {
+      "title": "UAE na Afrika Mashariki",
+      "desc": "Kutoa huduma kwa biashara kutoka Dubai hadi Kenya na Tanzania."
+    },
+    "card4": {
+      "title": "Msaada Kabla na Baada ya Mauzo",
+      "desc": "Timu maalum kutoka ushauri hadi msaada baada ya mauzo."
+    }
+  },
+  "Contact": {
+    "label": "WASILIANA NASI",
+    "title": "Shirikiana Nasi kwa Vifaa vya IT vya Hali ya Juu",
+    "body": "Tuko tayari kukusaidia kupata teknolojia sahihi kwa biashara yako.",
+    "phone": "+971 567 509 686",
+    "email": "vdcruz@mercuriatech.com",
+    "location": "DSO – IFZA 23530, Dubai Silicon Oasis",
+    "benefit1": "Bidhaa halisi zilizoidhinishwa",
+    "benefit2": "Bei shindani",
+    "benefit3": "Uwasilishaji wa haraka UAE nzima",
+    "benefit4": "Meneja wa akaunti maalum",
+    "benefit5": "Msaada kabla na baada ya mauzo",
+    "benefit6": "Huduma Afrika Mashariki",
+    "formTitle": "Tuma Maombi",
+    "firstName": "Jina la Kwanza",
+    "lastName": "Jina la Mwisho",
+    "companyName": "Jina la Kampuni",
+    "companyEmail": "Barua pepe ya Kampuni",
+    "phoneField": "Simu",
+    "productInterest": "Nia ya Bidhaa",
+    "message": "Ujumbe",
+    "submit": "Tuma Maombi",
+    "options": {
+      "endUser": "Kompyuta za Mtumiaji",
+      "networking": "Mtandao",
+      "servers": "Seva na Hifadhi",
+      "peripherals": "Vifaa",
+      "security": "Vifaa vya Usalama",
+      "specialty": "Maalum"
+    }
+  },
+  "Footer": {
+    "newsletter": "Endelea kupata habari za suluhisho zetu mpya",
+    "emailPlaceholder": "Weka barua pepe yako",
+    "send": "Tuma",
+    "tagline": "Kuwezesha Biashara Kupitia Teknolojia",
+    "quickLinks": "Viungo vya Haraka",
+    "home": "Nyumbani",
+    "products": "Bidhaa",
+    "brands": "Chapa",
+    "about": "Kuhusu",
+    "contact": "Wasiliana",
+    "contactInfo": "Maelezo ya Mawasiliano",
+    "address": "Dubai Silicon Oasis, IFZA 23530, Dubai, UAE",
+    "phone": "+971 567 509 686",
+    "email": "vdcruz@mercuriatech.com",
+    "copyright": "© 2025 Mercuriatech FZ CO. Haki Zote Zimehifadhiwa.",
+    "registered": "Imesajiliwa katika IFZA, Dubai Silicon Oasis, UAE."
+  }
+}
