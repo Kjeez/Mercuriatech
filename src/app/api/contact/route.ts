@@ -50,7 +50,7 @@ export async function POST(request: Request) {
                 <tr>
                   <td style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 20px; border-left: 4px solid #3B8EED;">
                     <p style="color: #64748b; font-size: 12px; margin: 0 0 5px 0; text-transform: uppercase;">Name</p>
-                    <p style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 600;">\${fullName}</p>
+                    <p style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 600;">${fullName}</p>
                   </td>
                 </tr>
               </table>
@@ -59,50 +59,50 @@ export async function POST(request: Request) {
                 <tr>
                    <td style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 20px; border-left: 4px solid #3B8EED;">
                     <p style="color: #64748b; font-size: 12px; margin: 0 0 5px 0; text-transform: uppercase;">Email</p>
-                    <p style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 600;">\${companyEmail}</p>
+                    <p style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 600;">${companyEmail}</p>
                   </td>
                 </tr>
               </table>
               
-              \${phone ? \`
+              ${phone ? `
               <table width="100%" style="margin-bottom: 20px;">
                 <tr>
                    <td style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 20px; border-left: 4px solid #3B8EED;">
                     <p style="color: #64748b; font-size: 12px; margin: 0 0 5px 0; text-transform: uppercase;">Phone</p>
-                    <p style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 600;">\${phone}</p>
+                    <p style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 600;">${phone}</p>
                   </td>
                 </tr>
-              </table>\` : ''}
+              </table>` : ''}
 
-              \${companyName ? \`
+              ${companyName ? `
               <table width="100%" style="margin-bottom: 20px;">
                 <tr>
                    <td style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 20px; border-left: 4px solid #3B8EED;">
                     <p style="color: #64748b; font-size: 12px; margin: 0 0 5px 0; text-transform: uppercase;">Company</p>
-                    <p style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 600;">\${companyName}</p>
+                    <p style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 600;">${companyName}</p>
                   </td>
                 </tr>
-              </table>\` : ''}
+              </table>` : ''}
 
-              \${productInterest ? \`
+              ${productInterest ? `
               <table width="100%" style="margin-bottom: 20px;">
                 <tr>
                   <td style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 20px; border-left: 4px solid #D71920;">
                     <p style="color: #64748b; font-size: 12px; margin: 0 0 5px 0; text-transform: uppercase;">Product Interest</p>
-                    <p style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 600;">\${productInterest}</p>
+                    <p style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 600;">${productInterest}</p>
                   </td>
                 </tr>
-              </table>\` : ''}
+              </table>` : ''}
 
-              \${message ? \`
+              ${message ? `
               <table width="100%" style="margin-bottom: 20px;">
                 <tr>
                   <td style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 20px; border-left: 4px solid #D71920;">
                     <p style="color: #64748b; font-size: 12px; margin: 0 0 5px 0; text-transform: uppercase;">Message</p>
-                    <p style="color: #e2e8f0; font-size: 16px; margin: 0; line-height: 1.6;">\${message}</p>
+                    <p style="color: #e2e8f0; font-size: 16px; margin: 0; line-height: 1.6;">${message}</p>
                   </td>
                 </tr>
-              </table>\` : ''}
+              </table>` : ''}
             </td>
           </tr>
           <tr>
@@ -115,17 +115,17 @@ export async function POST(request: Request) {
     </tr>
   </table>
 </body>
-</html>\`;
+</html>`;
     const recipients = [process.env.MAIL_RECIPIENT_1].filter(Boolean) as string[];
 
     await transporter.sendMail({
-      from: \`"MercuriaTech Contacts" <\${process.env.MAIL_USER}>\`,
+      from: `"MercuriaTech Contacts" <${process.env.MAIL_USER}>`,
       to: recipients,
-      subject: \`New Contact Request: \${fullName}\`,
+      subject: `New Contact Request: ${fullName}`,
       html: template
     });
 
-    console.log(\`Contact email sent from \${fullName}\`);
+    console.log(`Contact email sent from ${fullName}`);
     return NextResponse.json({ success: true, message: 'Message sent successfully!' });
 
   } catch (error) {
