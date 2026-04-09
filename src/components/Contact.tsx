@@ -59,14 +59,14 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#A46EDB]/20 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#3B8EED]/20 to-transparent" />
 
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* LEFT SIDE */}
         <div
           className="px-6 sm:px-12 lg:px-16 py-20 lg:py-28 relative"
           style={{
-            background: "linear-gradient(180deg, #130826 0%, #200D42 100%)",
+            background: "linear-gradient(180deg, #081228 0%, #0A1E3D 100%)",
           }}
         >
           <div
@@ -76,7 +76,7 @@ export default function Contact() {
               height: "400px",
               bottom: "-20%",
               left: "-15%",
-              background: "radial-gradient(circle, rgba(164,110,219,0.08), transparent 70%)",
+              background: "radial-gradient(circle, rgba(59,142,237,0.08), transparent 70%)",
               filter: "blur(60px)",
             }}
           />
@@ -105,15 +105,15 @@ export default function Contact() {
               className="space-y-4 mb-10"
             >
               <div className="flex items-center gap-3 text-[14px] text-white/55">
-                <Phone size={16} className="text-[#A46EDB] shrink-0" />
+                <Phone size={16} className="text-[#D71920] shrink-0" />
                 {t("phone")}
               </div>
               <div className="flex items-center gap-3 text-[14px] text-white/55">
-                <Mail size={16} className="text-[#A46EDB] shrink-0" />
+                <Mail size={16} className="text-[#3B8EED] shrink-0" />
                 {t("email")}
               </div>
               <div className="flex items-center gap-3 text-[14px] text-white/55">
-                <MapPin size={16} className="text-[#A46EDB] shrink-0" />
+                <MapPin size={16} className="text-[#3B8EED] shrink-0" />
                 {t("location")}
               </div>
             </motion.div>
@@ -127,8 +127,8 @@ export default function Contact() {
             >
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-center gap-3 text-[13px] text-white/50">
-                  <div className="w-5 h-5 rounded-full bg-[#A46EDB]/15 flex items-center justify-center shrink-0">
-                    <Check size={11} className="text-[#A46EDB]" />
+                  <div className="w-5 h-5 rounded-full bg-[#3B8EED]/15 flex items-center justify-center shrink-0">
+                    <Check size={11} className="text-[#3B8EED]" />
                   </div>
                   {b}
                 </div>
@@ -140,7 +140,7 @@ export default function Contact() {
         {/* RIGHT — Form */}
         <div
           className="px-6 sm:px-12 lg:px-16 py-20 lg:py-28 relative flex items-center"
-          style={{ background: "#07000F" }}
+          style={{ background: "#020810" }}
         >
           <div
             className="absolute rounded-full pointer-events-none"
@@ -149,7 +149,7 @@ export default function Contact() {
               height: "400px",
               top: "-10%",
               right: "-15%",
-              background: "radial-gradient(circle, rgba(79,33,161,0.06), transparent 70%)",
+              background: "radial-gradient(circle, rgba(0,86,184,0.06), transparent 70%)",
               filter: "blur(60px)",
             }}
           />
@@ -161,7 +161,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="w-full max-w-[520px] mx-auto relative z-10"
           >
-            <div className="rounded-2xl border border-white/[0.08] bg-[#200D42]/30 backdrop-blur-xl p-8 sm:p-10 shadow-2xl shadow-purple-950/30">
+            <div className="rounded-2xl border border-white/[0.08] bg-[#0A1E3D]/30 backdrop-blur-xl p-8 sm:p-10 shadow-2xl shadow-blue-950/30">
               <h3 className="text-[22px] font-semibold text-white mb-7">
                 {t("formTitle")}
               </h3>
@@ -217,11 +217,11 @@ export default function Contact() {
                   onChange={handleChange}
                   className="form-field appearance-none"
                 >
-                  <option value="" disabled className="bg-[#200D42] text-white/40">
+                  <option value="" disabled className="bg-[#0A1E3D] text-white/40">
                     {t("productInterest")}
                   </option>
                   {productOptions.map((opt) => (
-                    <option key={opt.value} value={opt.value} className="bg-[#200D42]">
+                    <option key={opt.value} value={opt.value} className="bg-[#0A1E3D]">
                       {opt.label}
                     </option>
                   ))}
@@ -236,7 +236,7 @@ export default function Contact() {
                 />
                 <button
                   type="submit"
-                  className="w-full h-14 flex items-center justify-center gap-2 bg-gradient-to-r from-purple-800 via-purple-700 to-purple-400 text-white font-semibold text-[15px] rounded-xl transition-all hover:shadow-lg hover:shadow-purple-500/25 hover:translate-y-[-2px]"
+                  className="w-full h-14 flex items-center justify-center gap-2 bg-gradient-to-r from-[#E8242B] via-[#D71920] to-[#A8101A] text-white font-semibold text-[15px] rounded-xl transition-all hover:shadow-lg hover:shadow-red-500/25 hover:translate-y-[-2px]"
                 >
                   {submitted ? (
                     "✓ Sent!"

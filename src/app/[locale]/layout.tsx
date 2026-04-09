@@ -8,10 +8,10 @@ import { routing } from "@/i18n/routing";
 export const metadata: Metadata = {
   title: "Mercuriatech | Premium IT Hardware Distributor in Dubai",
   description:
-    "Mercuriatech FZ CO — Your trusted B2B IT hardware distributor based in Dubai Silicon Oasis. Supplying world-class technology solutions across UAE and East Africa from 15+ global brands.",
+    "Mercuriatech FZ CO — Your trusted B2B IT hardware distributor based in Dubai Silicon Oasis. Supplying world-class technology solutions across the Middle East and East Africa from 15+ global brands.",
   keywords: [
     "IT hardware distributor Dubai",
-    "B2B technology solutions UAE",
+    "B2B technology solutions Middle East",
     "Cisco distributor Dubai",
     "HP Dell Lenovo supplier",
     "IT equipment East Africa",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mercuriatech | Premium IT Hardware Distributor in Dubai",
     description:
-      "Supplying world-class technology solutions across UAE and East Africa",
+      "Supplying world-class technology solutions across the Middle East and East Africa",
     type: "website",
     url: "https://www.mercuriatech.com",
   },
@@ -38,7 +38,7 @@ export default async function LocaleLayout({
   const { locale } = await params;
 
   // Validate locale
-  if (!routing.locales.includes(locale as 'en' | 'sw')) {
+  if (!routing.locales.includes(locale as 'en')) {
     notFound();
   }
 

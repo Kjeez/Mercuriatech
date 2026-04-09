@@ -24,8 +24,13 @@ export default function ProductGrid() {
     brands: t(`card${i}.brands`),
   }));
 
+  const scrollToContact = () => {
+    const el = document.querySelector("#contact");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section id="products" className="relative" style={{ background: "#07000F" }}>
+    <section id="products" className="relative" style={{ background: "#020810" }}>
       {/* Ambient orbs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div
@@ -35,7 +40,7 @@ export default function ProductGrid() {
             height: "600px",
             top: "10%",
             left: "-15%",
-            background: "radial-gradient(circle, rgba(164,110,219,0.06), transparent 70%)",
+            background: "radial-gradient(circle, rgba(59,142,237,0.06), transparent 70%)",
             filter: "blur(60px)",
           }}
         />
@@ -46,7 +51,7 @@ export default function ProductGrid() {
             height: "500px",
             bottom: "5%",
             right: "-10%",
-            background: "radial-gradient(circle, rgba(79,33,161,0.08), transparent 70%)",
+            background: "radial-gradient(circle, rgba(0,86,184,0.08), transparent 70%)",
             filter: "blur(60px)",
           }}
         />
@@ -79,10 +84,10 @@ export default function ProductGrid() {
                 className="purple-card group flex flex-col"
               >
                 {/* Icon */}
-                <div className="w-12 h-12 rounded-xl bg-[#A46EDB]/10 border border-[#A46EDB]/15 flex items-center justify-center mb-5 group-hover:bg-[#A46EDB]/20 transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-[#3B8EED]/10 border border-[#3B8EED]/15 flex items-center justify-center mb-5 group-hover:bg-[#3B8EED]/20 transition-colors">
                   <Icon
                     size={22}
-                    className="text-[#A46EDB]"
+                    className="text-[#3B8EED]"
                     strokeWidth={1.8}
                   />
                 </div>
@@ -102,11 +107,14 @@ export default function ProductGrid() {
                   {card.brands}
                 </p>
 
-                {/* Learn more link */}
-                <div className="flex items-center gap-1.5 text-[13px] font-medium text-[#A46EDB] group-hover:gap-3 transition-all duration-300 cursor-pointer">
+                {/* Get a Quote link — scrolls to contact */}
+                <button
+                  onClick={scrollToContact}
+                  className="flex items-center gap-1.5 text-[13px] font-medium text-[#3B8EED] group-hover:gap-3 transition-all duration-300 cursor-pointer"
+                >
                   {t("learnMore")}
                   <ArrowRight size={14} />
-                </div>
+                </button>
               </motion.div>
             );
           })}

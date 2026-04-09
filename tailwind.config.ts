@@ -11,8 +11,8 @@ const config: Config = {
       colors: {
         background: "#0A0A0F",
         foreground: "#FFFFFF",
-        primary: "#00C2FF",
-        accent: "#7B2FFF",
+        primary: "#0056B8",
+        accent: "#D71920",
         muted: "#A0AEC0",
         card: "rgba(255,255,255,0.05)",
       },

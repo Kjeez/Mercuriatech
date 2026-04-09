@@ -25,10 +25,10 @@ export default function Industries() {
     <section
       className="relative"
       style={{
-        background: "linear-gradient(180deg, #0A0015 0%, #130826 100%)",
+        background: "linear-gradient(180deg, #000A1A 0%, #081228 100%)",
       }}
     >
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#A46EDB]/15 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#3B8EED]/15 to-transparent" />
 
       <div className="max-w-[1320px] mx-auto px-6 py-24 lg:py-32">
         <motion.div
@@ -52,10 +52,10 @@ export default function Industries() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.35, delay: index * 0.06 }}
-                className="flex items-center gap-4 px-6 py-5 rounded-2xl bg-[#200D42]/40 border border-white/[0.06] hover:border-[#A46EDB]/25 hover:bg-[#200D42]/60 transition-all duration-300 cursor-default group backdrop-blur-sm"
+                className="flex items-center gap-4 px-6 py-5 rounded-2xl bg-[#0A1E3D]/40 border border-white/[0.06] hover:border-[#3B8EED]/25 hover:bg-[#0A1E3D]/60 transition-all duration-300 cursor-default group backdrop-blur-sm"
               >
-                <div className="w-11 h-11 rounded-xl bg-[#A46EDB]/10 flex items-center justify-center shrink-0 group-hover:bg-[#A46EDB]/20 transition-colors">
-                  <Icon size={20} className="text-[#A46EDB]" strokeWidth={1.8} />
+                <div className="w-11 h-11 rounded-xl bg-[#3B8EED]/10 flex items-center justify-center shrink-0 group-hover:bg-[#3B8EED]/20 transition-colors">
+                  <Icon size={20} className="text-[#3B8EED]" strokeWidth={1.8} />
                 </div>
                 <span className="text-[14px] font-medium text-white/80">
                   {chip.label}

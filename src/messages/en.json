@@ -14,12 +14,12 @@
     "headline1": "Empowering Business",
     "headline2": "with Premium IT",
     "headline3": "Hardware",
-    "subtext": "Supplying world-class laptops, servers, networking, and security hardware across UAE and East Africa.",
+    "subtext": "Supplying world-class laptops, servers, networking, and security hardware across the Middle East and East Africa.",
     "exploreProducts": "Explore Products",
     "contactUs": "Contact Us",
     "trust1": "IFZA Certified",
     "trust2": "15+ Brands",
-    "trust3": "UAE & Africa",
+    "trust3": "Middle East & Africa",
     "tabLaptops": "Laptops",
     "tabServers": "Servers",
     "tabNetworking": "Networking"
@@ -60,7 +60,7 @@
       "desc": "POS systems and industrial/embedded hardware for niche operations.",
       "brands": "Zebra • Honeywell"
     },
-    "learnMore": "Learn more →"
+    "learnMore": "Get a Quote →"
   },
   "Statement": {
     "label": "WHO WE ARE",
@@ -69,7 +69,7 @@
     "stat1Label": "Brands",
     "stat2": "6",
     "stat2Label": "Categories",
-    "stat3": "UAE & Africa",
+    "stat3": "Middle East & Africa",
     "stat3Label": "Coverage",
     "stat4": "IFZA",
     "stat4Label": "Certified"
@@ -86,7 +86,7 @@
   },
   "WhyUs": {
     "label": "WHY MERCURIATECH",
-    "title": "Trusted IT hardware partner for UAE and East Africa",
+    "title": "Trusted IT hardware partner for the Middle East and East Africa",
     "subtitle": "Delivering quality, authenticity, and performance.",
     "card1": {
       "title": "IFZA Free Zone Registered",
@@ -97,7 +97,7 @@
       "desc": "Direct partnerships with 15+ global technology brands."
     },
     "card3": {
-      "title": "UAE & East Africa Coverage",
+      "title": "Middle East & East Africa Coverage",
       "desc": "Serving businesses from Dubai to Kenya and Tanzania."
     },
     "card4": {
@@ -110,14 +110,14 @@
     "title": "Partner with Us for Premium IT Hardware",
     "body": "We're ready to help you source the right technology for your business.",
     "phone": "+971 567 509 686",
-    "email": "vdcruz@mercuriatech.com",
+    "email": "brandon@mercuriatech.com",
     "location": "DSO – IFZA 23530, Dubai Silicon Oasis",
     "benefit1": "Genuine authorized products",
     "benefit2": "Competitive pricing",
-    "benefit3": "Fast UAE-wide delivery",
+    "benefit3": "Fast - Global delivery",
     "benefit4": "Dedicated account manager",
     "benefit5": "Pre & post sales support",
-    "benefit6": "East Africa coverage",
+    "benefit6": "Middle East & East Africa coverage",
     "formTitle": "Send an Enquiry",
     "firstName": "First Name",
     "lastName": "Last Name",
@@ -148,10 +148,10 @@
     "about": "About",
     "contact": "Contact",
     "contactInfo": "Contact Info",
-    "address": "Dubai Silicon Oasis, IFZA 23530, Dubai, UAE",
+    "address": "Dubai Silicon Oasis, IFZA 23530, Dubai",
     "phone": "+971 567 509 686",
-    "email": "vdcruz@mercuriatech.com",
+    "email": "brandon@mercuriatech.com",
     "copyright": "© 2025 Mercuriatech FZ CO. All Rights Reserved.",
-    "registered": "Registered at IFZA, Dubai Silicon Oasis, UAE."
+    "registered": "Registered at IFZA, Dubai Silicon Oasis."
   }
 }

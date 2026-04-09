@@ -6,12 +6,14 @@
 
 :root {
   --bg-primary: #000000;
-  --bg-deep: #0A0015;
-  --bg-card: #130826;
-  --purple-dark: #200D42;
-  --purple-mid: #4F21A1;
-  --purple-bright: #A46EDB;
-  --purple-light: #B48CDE;
+  --bg-deep: #000A1A;
+  --bg-card: #081228;
+  --blue-dark: #0A1E3D;
+  --blue-mid: #0056B8;
+  --blue-bright: #3B8EED;
+  --blue-light: #6CB4F5;
+  --red-accent: #D71920;
+  --red-light: #E8444A;
   --text: #FFFFFF;
   --text-muted: rgba(255, 255, 255, 0.55);
   --border: rgba(255, 255, 255, 0.1);
@@ -39,7 +41,7 @@ body {
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #000; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #A46EDB, #4F21A1);
+  background: linear-gradient(180deg, #D71920, #0056B8);
   border-radius: 3px;
 }
 
@@ -48,13 +50,13 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 6px 16px;
-  background: rgba(164, 110, 219, 0.1);
-  border: 1px solid rgba(164, 110, 219, 0.2);
+  background: rgba(59, 142, 237, 0.1);
+  border: 1px solid rgba(59, 142, 237, 0.2);
   border-radius: 100px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 1.5px;
-  color: var(--purple-bright);
+  color: var(--blue-bright);
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -68,9 +70,9 @@ body {
   letter-spacing: -0.03em;
 }
 
-/* === PURPLE CARD === */
+/* === BRAND CARD === */
 .purple-card {
-  background: rgba(32, 13, 66, 0.4);
+  background: rgba(10, 30, 61, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 32px;
@@ -82,12 +84,12 @@ body {
 
 .purple-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(164, 110, 219, 0.3);
+  border-color: rgba(59, 142, 237, 0.3);
   box-shadow:
-    0 8px 40px rgba(164, 110, 219, 0.12),
-    0 0 0 1px rgba(164, 110, 219, 0.1),
+    0 8px 40px rgba(59, 142, 237, 0.12),
+    0 0 0 1px rgba(59, 142, 237, 0.1),
     inset 0 1px 0 rgba(255,255,255,0.05);
-  background: rgba(32, 13, 66, 0.6);
+  background: rgba(10, 30, 61, 0.6);
 }
 
 /* === BUTTONS === */
@@ -97,7 +99,7 @@ body {
   justify-content: center;
   gap: 8px;
   padding: 14px 32px;
-  background: linear-gradient(135deg, #7C3AED 0%, #A855F7 50%, #A46EDB 100%);
+  background: linear-gradient(135deg, #E8242B 0%, #D71920 50%, #A8101A 100%);
   color: white;
   border: none;
   border-radius: 10px;
@@ -110,7 +112,7 @@ body {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 4px 30px rgba(164, 110, 219, 0.5);
+  box-shadow: 0 4px 30px rgba(215, 25, 32, 0.4);
   transform: translateY(-2px);
 }
 
@@ -134,9 +136,9 @@ body {
 }
 
 .btn-ghost:hover {
-  border-color: rgba(164, 110, 219, 0.4);
-  background: rgba(164, 110, 219, 0.08);
-  color: #D8B4FE;
+  border-color: rgba(59, 142, 237, 0.4);
+  background: rgba(59, 142, 237, 0.08);
+  color: #6CB4F5;
 }
 
 /* === FORM === */
@@ -154,8 +156,8 @@ body {
 }
 
 .form-field:focus {
-  border-color: #A46EDB;
-  box-shadow: 0 0 0 3px rgba(164, 110, 219, 0.15);
+  border-color: #3B8EED;
+  box-shadow: 0 0 0 3px rgba(59, 142, 237, 0.15);
   background: rgba(255, 255, 255, 0.06);
 }
 
@@ -165,7 +167,7 @@ body {
 
 /* === GRADIENT TEXT === */
 .gradient-text-purple {
-  background: linear-gradient(135deg, #D8B4FE, #A855F7, #7C3AED);
+  background: linear-gradient(135deg, #6CB4F5, #3B8EED, #D71920);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -183,16 +185,16 @@ body {
 
 /* === HERO GRADIENT === */
 .hero-gradient {
-  background: linear-gradient(to bottom, #000000, #200D42 40%, #4F21A1 74%, #A46EDB 88%);
+  background: linear-gradient(to bottom, #000000, #0A1E3D 40%, #0056B8 74%, #3B8EED 88%);
 }
 
-/* === PURPLE SECTIONS === */
+/* === BLUE SECTIONS === */
 .section-deep {
-  background: linear-gradient(180deg, #0A0015 0%, #130826 100%);
+  background: linear-gradient(180deg, #000A1A 0%, #081228 100%);
 }
 
 .section-mid {
-  background: linear-gradient(180deg, #130826 0%, #1A0B38 100%);
+  background: linear-gradient(180deg, #081228 0%, #0A1E3D 100%);
 }
 
 /* === DIAMOND DOT PATTERN === */
@@ -209,7 +211,7 @@ body {
   bottom: 0;
   width: 350px;
   background-image:
-    radial-gradient(circle, rgba(164,110,219,0.15) 1.5px, transparent 1.5px);
+    radial-gradient(circle, rgba(59,142,237,0.15) 1.5px, transparent 1.5px);
   background-size: 22px 22px;
   mask-image: linear-gradient(to left, rgba(0,0,0,0.6), transparent);
   -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.6), transparent);

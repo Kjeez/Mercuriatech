@@ -19,21 +19,21 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen overflow-hidden hero-gradient"
     >
-      {/* Vertical border lines (21st.dev style) */}
+      {/* Vertical border lines */}
       <div className="absolute inset-0 z-0 grid h-full w-full grid-cols-[clamp(28px,10vw,120px)_auto_clamp(28px,10vw,120px)]">
         <div className="col-span-1" />
         <div className="col-span-1 border-x border-white/[0.08]" />
         <div className="col-span-1" />
       </div>
 
-      {/* Large elliptic shape at bottom (21st.dev style) */}
+      {/* Large elliptic shape at bottom */}
       <div
-        className="absolute left-1/2 top-[calc(100%-90px)] lg:top-[calc(100%-150px)] h-[500px] w-[700px] md:h-[500px] md:w-[1100px] lg:h-[750px] lg:w-[100%] -translate-x-1/2 rounded-[100%] bg-[radial-gradient(closest-side,#000_82%,#9560EB)]"
-        style={{ borderTop: "1px solid #B48CDE" }}
+        className="absolute left-1/2 top-[calc(100%-90px)] lg:top-[calc(100%-150px)] h-[500px] w-[700px] md:h-[500px] md:w-[1100px] lg:h-[750px] lg:w-[100%] -translate-x-1/2 rounded-[100%] bg-[radial-gradient(closest-side,#000_82%,#3B8EED)]"
+        style={{ borderTop: "1px solid #6CB4F5" }}
       />
 
       {/* Ambient blur orbs */}
-      <figure className="pointer-events-none absolute -bottom-[70%] left-1/2 z-0 block aspect-square w-[520px] -translate-x-1/2 rounded-full bg-[#A46EDB]/40 blur-[200px]" />
+      <figure className="pointer-events-none absolute -bottom-[70%] left-1/2 z-0 block aspect-square w-[520px] -translate-x-1/2 rounded-full bg-[#3B8EED]/40 blur-[200px]" />
       <figure className="pointer-events-none absolute left-[4vw] top-[64px] z-0 hidden md:block aspect-square w-[32vw] rounded-full bg-black/50 opacity-50 blur-[100px]" />
       <figure className="pointer-events-none absolute bottom-[-50px] right-[7vw] z-0 hidden md:block aspect-square w-[30vw] rounded-full bg-black/50 opacity-50 blur-[100px]" />
 
@@ -47,7 +47,7 @@ export default function Hero() {
             transition={{ delay: 0.1, duration: 0.5 }}
             className="flex items-center gap-2 border border-white/[0.08] border-b-0 px-5 py-2.5 mt-8"
           >
-            <div className="w-2 h-2 rounded-full bg-[#A46EDB] animate-pulse" />
+            <div className="w-2 h-2 rounded-full bg-[#D71920] animate-pulse" />
             <p className="text-white/50 text-sm tracking-tight font-medium">
               {t("label")}
             </p>
@@ -77,7 +77,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* CTA buttons (21st.dev stacked style) */}
+        {/* CTA buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -93,7 +93,7 @@ export default function Hero() {
             </button>
             <button
               onClick={() => scrollTo("#contact")}
-              className="flex h-14 w-full items-center justify-center bg-gradient-to-r from-purple-800 via-purple-700 to-purple-400 text-white font-medium text-base transition-all hover:shadow-lg hover:shadow-purple-500/20"
+              className="flex h-14 w-full items-center justify-center bg-gradient-to-r from-[#E8242B] via-[#D71920] to-[#A8101A] text-white font-medium text-base transition-all hover:shadow-lg hover:shadow-red-500/20"
             >
               {t("contactUs")}
               <ArrowRight size={16} className="ml-2" />
@@ -103,16 +103,19 @@ export default function Hero() {
 
         {/* Trust strip below CTAs */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
-          className="flex justify-center py-6"
+          className="flex justify-center py-8"
         >
-          <div className="flex flex-wrap gap-8 justify-center">
+          <div className="flex flex-wrap gap-4 sm:gap-6 justify-center">
             {trustItems.map((item, i) => (
-              <div key={i} className="flex items-center gap-2 text-[13px] text-white/40">
-                <div className="w-5 h-5 rounded-full bg-[#A46EDB]/15 flex items-center justify-center">
-                  <Check size={11} className="text-[#A46EDB]" />
+              <div
+                key={i}
+                className="flex items-center gap-2.5 text-[14px] sm:text-[15px] font-semibold text-white/90 px-5 py-3 rounded-full border border-white/[0.12] bg-white/[0.05] backdrop-blur-md"
+              >
+                <div className="w-6 h-6 rounded-full bg-[#D71920]/20 border border-[#D71920]/30 flex items-center justify-center">
+                  <Check size={13} className="text-[#D71920]" strokeWidth={3} />
                 </div>
                 {item}
               </div>
@@ -120,7 +123,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Brand logos marquee (21st.dev AnimatedLogoCloud style) */}
+        {/* Brand logos marquee */}
         <div className="mx-auto max-w-7xl w-full">
           <AnimatedBrandCloud />
         </div>
@@ -129,7 +132,7 @@ export default function Hero() {
   );
 }
 
-/* 21st.dev style animated logo cloud */
+/* Animated logo cloud */
 const brands = [
   { name: "CISCO", color: "#049FD9" },
   { name: "HP", color: "#0096D6" },

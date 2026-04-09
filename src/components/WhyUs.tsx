@@ -16,7 +16,7 @@ export default function WhyUs() {
   }));
 
   return (
-    <section id="about" className="relative" style={{ background: "#07000F" }}>
+    <section id="about" className="relative" style={{ background: "#020810" }}>
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div
           className="absolute rounded-full"
@@ -25,13 +25,13 @@ export default function WhyUs() {
             height: "500px",
             top: "-10%",
             right: "-10%",
-            background: "radial-gradient(circle, rgba(164,110,219,0.05), transparent 70%)",
+            background: "radial-gradient(circle, rgba(59,142,237,0.05), transparent 70%)",
             filter: "blur(60px)",
           }}
         />
       </div>
 
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#A46EDB]/15 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#3B8EED]/15 to-transparent" />
 
       <div className="max-w-[1320px] mx-auto px-6 py-24 lg:py-32 relative z-10">
         <motion.div
@@ -58,8 +58,8 @@ export default function WhyUs() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="purple-card text-center group"
               >
-                <div className="w-14 h-14 rounded-2xl bg-[#A46EDB]/10 border border-[#A46EDB]/15 flex items-center justify-center mx-auto mb-5 group-hover:bg-[#A46EDB]/20 transition-colors">
-                  <Icon size={26} className="text-[#A46EDB]" strokeWidth={1.8} />
+                <div className="w-14 h-14 rounded-2xl bg-[#3B8EED]/10 border border-[#3B8EED]/15 flex items-center justify-center mx-auto mb-5 group-hover:bg-[#3B8EED]/20 transition-colors">
+                  <Icon size={26} className="text-[#3B8EED]" strokeWidth={1.8} />
                 </div>
                 <h3 className="text-[16px] font-semibold text-white mb-3 leading-snug">
                   {card.title}

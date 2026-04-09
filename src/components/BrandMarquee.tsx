@@ -32,11 +32,11 @@ export default function BrandMarquee() {
       id="brands"
       className="relative py-24 overflow-hidden"
       style={{
-        background: "linear-gradient(180deg, #0A0015 0%, #130826 50%, #0A0015 100%)",
+        background: "linear-gradient(180deg, #000A1A 0%, #081228 50%, #000A1A 100%)",
       }}
     >
       {/* Top border glow */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#A46EDB]/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#3B8EED]/30 to-transparent" />
 
       <div className="max-w-[1320px] mx-auto px-6 mb-14">
         <motion.div
@@ -53,14 +53,14 @@ export default function BrandMarquee() {
 
       {/* Row 1 — scroll left */}
       <div className="relative mb-4">
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#0A0015] to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#0A0015] to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#000A1A] to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#000A1A] to-transparent z-10" />
         <div className="flex overflow-hidden">
           <div className="flex animate-marquee">
             {[...allBrands.slice(0, 9), ...allBrands.slice(0, 9)].map((brand, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 mx-3 flex items-center gap-3 px-6 py-3.5 rounded-full border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm hover:border-[#A46EDB]/30 transition-all duration-300"
+                className="flex-shrink-0 mx-3 flex items-center gap-3 px-6 py-3.5 rounded-full border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm hover:border-[#3B8EED]/30 transition-all duration-300"
               >
                 <div
                   className="w-2.5 h-2.5 rounded-full"
@@ -77,8 +77,8 @@ export default function BrandMarquee() {
 
       {/* Row 2 — scroll right */}
       <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#0A0015] to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#0A0015] to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#000A1A] to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#000A1A] to-transparent z-10" />
         <div className="flex overflow-hidden">
           <div
             className="flex"
@@ -89,7 +89,7 @@ export default function BrandMarquee() {
             {[...allBrands.slice(9), ...allBrands.slice(9)].map((brand, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 mx-3 flex items-center gap-3 px-6 py-3.5 rounded-full border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm hover:border-[#A46EDB]/30 transition-all duration-300"
+                className="flex-shrink-0 mx-3 flex items-center gap-3 px-6 py-3.5 rounded-full border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm hover:border-[#3B8EED]/30 transition-all duration-300"
               >
                 <div
                   className="w-2.5 h-2.5 rounded-full"
@@ -105,7 +105,7 @@ export default function BrandMarquee() {
       </div>
 
       {/* Bottom border glow */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#A46EDB]/20 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#3B8EED]/20 to-transparent" />
     </section>
   );
 }

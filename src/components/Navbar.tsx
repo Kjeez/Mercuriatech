@@ -1,17 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations, useLocale } from "next-intl";
-import { useRouter, usePathname } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
-  const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -20,11 +16,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const toggleLocale = () => {
-    const newLocale = locale === "en" ? "sw" : "en";
-    router.replace(pathname, { locale: newLocale });
-  };
 
   const navLinks = [
     { label: t("home"), href: "#home" },
@@ -48,7 +39,7 @@ export default function Navbar() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-black/80 backdrop-blur-2xl border-b border-white/[0.06] shadow-2xl shadow-purple-950/20"
+            ? "bg-black/80 backdrop-blur-2xl border-b border-white/[0.06] shadow-2xl shadow-blue-950/20"
             : "bg-transparent"
         }`}
       >
@@ -59,7 +50,7 @@ export default function Navbar() {
             className="flex items-center shrink-0"
           >
             <Image
-              src="/logo.png"
+              src="/logonew.png"
               alt="Mercuriatech"
               width={180}
               height={40}
@@ -88,17 +79,10 @@ export default function Navbar() {
                 {t("quickEnquiry")}
               </div>
               <div className="text-[14px] text-white font-semibold flex items-center gap-1.5">
-                <Phone size={13} className="text-[#A46EDB]" />
+                <Phone size={13} className="text-[#D71920]" />
                 {t("phone")}
               </div>
             </div>
-
-            <button
-              onClick={toggleLocale}
-              className="px-3 py-1.5 rounded-full text-[11px] font-semibold border border-white/10 text-white/50 hover:text-white hover:border-[#A46EDB]/40 transition-all duration-200"
-            >
-              {locale === "en" ? "EN | SW" : "SW | EN"}
-            </button>
 
             <button
               onClick={() => scrollTo("#contact")}
@@ -140,12 +124,6 @@ export default function Navbar() {
                 </button>
               ))}
               <div className="flex items-center gap-3 pt-5">
-                <button
-                  onClick={toggleLocale}
-                  className="px-4 py-2.5 rounded-full text-[12px] font-semibold border border-white/10 text-white/50"
-                >
-                  {locale === "en" ? "EN | SW" : "SW | EN"}
-                </button>
                 <button
                   onClick={() => scrollTo("#contact")}
                   className="btn-primary text-[13px] py-2.5 flex-1 rounded-full"
