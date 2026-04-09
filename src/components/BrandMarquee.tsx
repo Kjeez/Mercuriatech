@@ -22,6 +22,7 @@ const allBrands = [
   { name: "HPE", color: "#01A982" },
   { name: "Dell EMC", color: "#007DB8" },
   { name: "Logitech", color: "#00B8FC" },
+  { name: "NoMachine", color: "#28A8E0" },
 ];
 
 export default function BrandMarquee() {

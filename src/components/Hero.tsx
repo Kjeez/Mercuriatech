@@ -150,6 +150,7 @@ const brands = [
   { name: "Zebra", color: "#FFFFFF" },
   { name: "Honeywell", color: "#E31937" },
   { name: "D-Link", color: "#FF6B00" },
+  { name: "NoMachine", color: "#28A8E0" },
 ];
 
 function AnimatedBrandCloud() {
