@@ -17,6 +17,8 @@ export default function Contact() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -24,19 +26,40 @@ export default function Contact() {
     setFormState({ ...formState, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-    setFormState({
-      firstName: "",
-      lastName: "",
-      companyName: "",
-      companyEmail: "",
-      phone: "",
-      productInterest: "",
-      message: "",
-    });
+    setIsSubmitting(true);
+    setError("");
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formState)
+      });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.message || 'Failed to send message');
+      }
+      
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 5000);
+      setFormState({
+        firstName: "",
+        lastName: "",
+        companyName: "",
+        companyEmail: "",
+        phone: "",
+        productInterest: "",
+        message: "",
+      });
+    } catch (err: any) {
+      setError(err.message || "An error occurred");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const benefits = [
@@ -234,12 +257,20 @@ export default function Contact() {
                   rows={4}
                   className="form-field resize-none"
                 />
+                {error && (
+                  <div className="text-red-400 text-sm text-center bg-red-500/10 py-2 rounded-lg border border-red-500/20">
+                    {error}
+                  </div>
+                )}
                 <button
                   type="submit"
-                  className="w-full h-14 flex items-center justify-center gap-2 bg-gradient-to-r from-[#E8242B] via-[#D71920] to-[#A8101A] text-white font-semibold text-[15px] rounded-xl transition-all hover:shadow-lg hover:shadow-red-500/25 hover:translate-y-[-2px]"
+                  disabled={isSubmitting}
+                  className="w-full h-14 flex items-center justify-center gap-2 bg-gradient-to-r from-[#E8242B] via-[#D71920] to-[#A8101A] text-white font-semibold text-[15px] rounded-xl transition-all hover:shadow-lg hover:shadow-red-500/25 hover:translate-y-[-2px] disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {submitted ? (
                     "✓ Sent!"
+                  ) : isSubmitting ? (
+                    "Sending..."
                   ) : (
                     <>
                       <ArrowRight size={16} />
