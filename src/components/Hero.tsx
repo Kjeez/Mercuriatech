@@ -114,8 +114,8 @@ export default function Hero() {
                 key={i}
                 className="flex items-center gap-2.5 text-[14px] sm:text-[15px] font-semibold text-white/90 px-5 py-3 rounded-full border border-white/[0.12] bg-white/[0.05] backdrop-blur-md"
               >
-                <div className="w-6 h-6 rounded-full bg-[#D71920]/20 border border-[#D71920]/30 flex items-center justify-center">
-                  <Check size={13} className="text-[#D71920]" strokeWidth={3} />
+                <div className="w-6 h-6 rounded-full bg-[#3B8EED]/20 border border-[#3B8EED]/30 flex items-center justify-center">
+                  <Check size={13} className="text-[#3B8EED]" strokeWidth={3} />
                 </div>
                 {item}
               </div>
