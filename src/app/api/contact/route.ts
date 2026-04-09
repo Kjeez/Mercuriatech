@@ -116,8 +116,7 @@ export async function POST(request: Request) {
   </table>
 </body>
 </html>\`;
-
-    const recipients = [process.env.MAIL_RECIPIENT_1, process.env.MAIL_RECIPIENT_2].filter(Boolean) as string[];
+    const recipients = [process.env.MAIL_RECIPIENT_1].filter(Boolean) as string[];
 
     await transporter.sendMail({
       from: \`"MercuriaTech Contacts" <\${process.env.MAIL_USER}>\`,
